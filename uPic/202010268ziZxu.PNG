@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <title>登录 - 德邦IT wiki</title>
+    
+        
+
+                        
+    
+                        
+    
+                        
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+<!-- Deprecated since 3.4. To be removed in a future version of Confluence; use AJS.Confluence.getContextPath() -->
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="http://wiki.deppon.com">
+
+<meta id="atlassian-token" name="atlassian-token" content="ff9e9dd678b52797a6977d5263cca6ed43966230">
+
+<script type="text/javascript">
+    // Deprecated global variables. To be removed in a future version of Confluence.
+    var contextPath = '';
+</script>
+
+    
+
+<!-- include system css resources -->
+
+
+    <!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/66/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/66/_/download/superbatch/css/batch.css?media=print" media="print">
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/66/_/download/superbatch/css/batch.css" media="all">
+<!--[if gte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/66/_/download/superbatch/css/batch.css?conditionalComment=gte+IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/66/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+8" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/66/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/17f7809b580d0bb6837ac87000896384/_/download/contextbatch/css/main/batch.css" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/489a08012b3892af01d44d20031c3ce5/_/download/contextbatch/css/atl.general/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/489a08012b3892af01d44d20031c3ce5/_/download/contextbatch/css/atl.general/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/97dc6390d588612f887919b07575c554/_/download/contextbatch/css/login/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/10/_/styles/colors.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/5.1.4/_/download/resources/com.atlassian.confluence.plugins.doctheme:documentation/default-theme.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/5.1.4/_/download/resources/com.atlassian.confluence.plugins.doctheme:documentation/doc-theme.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/5.1.4/_/download/resources/com.atlassian.confluence.plugins.doctheme:documentation/splitter.css" media="all">
+
+<!-- end system css resources -->
+
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="robots" content="noarchive">
+    <meta name="confluence-request-time" content="1603699061831">
+<!-- Deprecated since 3.4. To be removed in a future version of Confluence; use atl.header -->
+        
+            <script type="text/x-template" title="share-content-popup">
+    <form action="#" method="post" class="aui share-content-popup">
+        <div class="field-group">
+            <div class="autocomplete-user-target">
+                <input class="text autocomplete-sharepage" id="users" data-max="10" data-dropdown-target=".autocomplete-user-target" data-none-message="没有找到匹配的用户或电子邮件" placeholder="用户名或电子邮件"/>
+            </div>
+            <ol class="recipients">
+            </ol>
+        </div>
+        <div class="field-group">
+            <textarea class="textarea" id="note" placeholder="添加一个可选的说明"/>
+        </div>
+        <div class="field-group button-panel">
+            <div class="progress-messages-icon"></div>
+            <div class="progress-messages">
+            </div>
+            <input class="button submit" type="submit" value="分享" disabled/>
+            <a class="close-dialog" href="#">取消</a>
+        </div>
+    </form>
+</script>
+
+<script type="text/x-template" title="share-content-popup-recipient-username">
+    <li data-username="{username}" style="display: none">
+        <img src="{thumbnailLink.href}" title="{title}">
+        <span class="title" title="{title}">{title}</span>
+        <span class="remove-recipient"/>
+    </li>
+</script>
+
+<script type="text/x-template" title="share-content-popup-recipient-email">
+    <li data-email="{email}" style="display: none">
+        <img src="{icon}" title="{email}">
+        <span class="title" title="{email}">{email}</span>
+        <span class="remove-recipient"/>
+    </li>
+</script>
+    
+<!-- CONF-28933: spaceKey needs to be added to the context for SpaceSidebarCondition -->
+        
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-keyboardshortcut-hash" content="e15fd3d079574dc1bd50af1b08d66c27">
+            <meta name="ap-request-id" content="6e78afd1947477d3">
+            
+
+    
+            
+    
+    
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="http://wiki.deppon.com">
+            <meta name="ajs-version-number" content="5.1.4">
+            <meta name="ajs-build-number" content="4249">
+            <meta name="ajs-remote-user" content="">
+            <meta name="ajs-static-resource-url-prefix" content="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="52428800">
+            <meta name="ajs-user-locale" content="zh_CN">
+            <meta name="ajs-enabled-dark-features" content="">
+            <meta name="ajs-atl-token" content="ff9e9dd678b52797a6977d5263cca6ed43966230">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-editor.loader.resources" content="&lt;!--[if lt IE 9]&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/9854424950c5878eb9d43edeb642a90f/_/download/contextbatch/css/editor,macro-browser,fullpage-editor/batch.css?conditionalComment=lt+IE+9&quot; media=&quot;all&quot;&gt;
+&lt;![endif]--&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/9854424950c5878eb9d43edeb642a90f/_/download/contextbatch/css/editor,macro-browser,fullpage-editor/batch.css&quot; media=&quot;all&quot;&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/9854424950c5878eb9d43edeb642a90f/_/download/contextbatch/css/editor,macro-browser,fullpage-editor/batch.css?media=%28max-width%3A+1270px%29&quot; media=&quot;(max-width: 1270px)&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/9854424950c5878eb9d43edeb642a90f/_/download/contextbatch/js/editor,macro-browser,fullpage-editor/batch.js&quot; &gt;&lt;/script&gt;
+">
+            <meta name="ajs-date.format" content="MMM dd, yyyy">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch/osd.action" title="德邦IT wiki"/>
+
+    <!-- include system javascript resources -->
+    <script type="text/javascript" src="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/66/_/download/superbatch/js/batch.js" ></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/66/_/download/superbatch/js/batch.js?conditionalComment=lte+IE+8" ></script>
+<![endif]-->
+<script type="text/javascript" src="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/17f7809b580d0bb6837ac87000896384/_/download/contextbatch/js/main/batch.js" ></script>
+<script type="text/javascript" src="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/489a08012b3892af01d44d20031c3ce5/_/download/contextbatch/js/atl.general/batch.js" ></script>
+<script type="text/javascript" src="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/1.0/_/download/batch/confluence.web.resources:login/confluence.web.resources:login.js" ></script>
+<script type="text/javascript" src="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/1.1.27/_/download/batch/com.atlassian.mywork.mywork-confluence-host-plugin:mw-header-anchor/com.atlassian.mywork.mywork-confluence-host-plugin:mw-header-anchor.js" ></script>
+
+    
+
+        
+    <!-- end system javascript resources -->
+    
+
+    
+
+</head>
+
+<body             onload="placeFocus()"
+     id="com-atlassian-confluence" class="theme-documentation login aui-layout aui-theme-default">
+    
+        
+    <div id="page">
+    <div id="full-height-container">
+        <div id="header-precursor">
+            <div class="cell">
+                
+                                    </div>
+        </div>
+        
+
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-before"><a class="aui-dropdown2-trigger app-switcher-trigger" aria-owns="app-switcher" aria-haspopup="true" tabindex="0"><span class="aui-icon aui-icon-small aui-iconfont-appswitcher">Linked Applications</span></a><div id="app-switcher" class="aui-dropdown2 aui-style-default"><div class="app-switcher-loading">Loading&hellip;</div></div><script>
+            (function (NL) {
+                var initialise = function () {
+                    // For some milestones of AUI, the atlassian soy namespace was renamed to aui. Handle that here by ensuring that window.atlassian is defined.
+                    window.atlassian = window.atlassian || window.aui;
+                    new NL.AppSwitcher({
+                        dropdownContents: '#app-switcher'
+                    });
+                };
+                if (NL.AppSwitcher) {
+                    initialise();
+                } else {
+                    NL.onInit = initialise;
+                }
+            }(window.NL = (window.NL || {})));
+            window.NL.isUserAdmin = false</script></div><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="/"><img src="/s/zh_CN-1988229788/4249/84a11b3502ae79dd6028856f37ff89838963c1cc.10/_/images/logo/confluence-logo.png" alt="德邦IT wiki" /></a></h1><ul class="aui-nav">
+                                </ul>
+</div><div class="aui-header-secondary"><ul class="aui-nav">
+                <li>
+<form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="/dosearchsite.action" method="get">
+    <fieldset>
+                        <label for="quick-search-query" class="assistive">快速搜索</label>
+        <input id="quick-search-query" class="text app-search search quick-search-query" type="text"
+               accessKey="q" autocomplete="off" name="queryString" title="快速搜索"  placeholder="Search" />
+        <input id="quick-search-submit" class="quick-search-submit" type="submit" value="搜索"/>
+
+        <div class="aui-dd-parent quick-nav-drop-down"></div>
+    </fieldset>
+    <div class="hidden parameters">
+                    <!-- putMetadata failed to add value for key "quick-nav-enabled" so rendering metadata inline - see server debug log for details -->
+        <meta name="ajs-quick-nav-enabled" content="true">
+                </div>
+</form>
+</li>
+    <li>    
+        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
+        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span><span class="aui-icon-dropdown"></span>
+    </a>
+    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+        
+        
+<a  id="confluence-help-link" href="http://docs.atlassian.com/confluence/docs-51/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
+>
+        Online Help
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="keyboard-shortcuts-link" href="#" class="    "      title="查看可用的键盘快捷方式" >
+        Keyboard Shortcuts
+</a>
+</li>
+                                            <li>
+    
+        
+<a  id="feed-builder-link" href="/dashboard/configurerssfeed.action" class="    "      title="创建个性化的 RSS源。" >
+        RSS源建立器
+</a>
+</li>
+                                            <li>
+    
+        
+<a  id="whats-new-menu-link" href="http://docs.atlassian.com/confluence/docs-51/whatsnew/iframe" class="    "      title="" >
+        What’s new
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="gadget-directory-link" href="#" class="   user-item administration-link "      title="浏览小工具" >
+        Available Gadgets
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    </li>
+    <li>    
+    </li>
+                <li>                                    <li>
+    
+        
+<a  id="login-link" href="/login.action" class="   user-item login-link "      title="" >
+        登录
+</a>
+</li>
+                        </li>
+</ul>
+</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    <br class="clear">
+</header>
+                <!-- \#header -->
+
+            
+        <div id="main" class=" aui-page-panel">
+            
+
+            <div id="sidebar-container">
+                                                                        </div><!-- \#sidebar-container -->
+
+            
+		
+        
+		
+        <div id="login-container" >
+        			<div class="login-section ">
+                                                                                         
+    <form     name="loginform" method="POST" action="/dologin.action" class="aui login-form-container" >
+
+                                                                                                    
+                    <h2>登录</h2>
+
+                                        
+<div id="action-messages">
+                        </div>
+                    <fieldset class="compact-form-fields">
+                            
+
+    <legend class="assistive"><span>登录到 Confluence</span></legend>
+                                                    
+
+<div class="field-group
+    "
+        >
+    <label id="os_username-label" for="os_username">
+    <u>U</u>用户名
+        </label>
+
+                <input type="text" name="os_username" id="os_username"                                   class="text   "                   data-focus="0"     />
+                      </div>                            
+
+<div class="field-group">
+    <label id="os_password-label" for="os_password">
+    <u>P</u>密码
+        </label>
+    <input type="password" name="os_password" id="os_password"                                   class="password "                   />
+                  </div>                            
+<div class="group">
+    
+<div class="checkbox">
+    <input type="checkbox" class="checkbox" value="true" name="os_cookie"
+                id="os_cookie">
+    <label for="os_cookie"><u>R</u>记住我的登录信息</label>
+    </div>
+</div>                        
+                        <div class="field-group form-buttons compact-form-buttons">
+                            <input id="loginButton" class="aui-button aui-style aui-button-primary" name="login" type="submit" value="登录"/>
+                                                            <a id="forgot-password" class="aui-button aui-style aui-button-link" href="/forgotuserpassword.action">忘记密码</a>
+                                                    </div>
+                        <input type="hidden" name="os_destination" value="/notpermitted.action?version=1&amp;modificationDate=1530873212000&amp;api=v2"/>
+                    </fieldset>
+                                    
+
+</form>            </div> 
+                            </div>
+                            
+        	
+        </div><!-- \#main -->
+    
+        
+                        
+            <div id="footer">
+
+    <section class="footer-body">
+
+                        
+    
+                <ul id="login-language">
+                                            <li>
+                            <a href="login.action?language=de_DE">Deutsch</a>
+                        </li>
+                                            <li>
+                            <a href="login.action?language=en_GB">English</a>
+                        </li>
+                                            <li>
+                            <a href="login.action?language=es_ES">Español</a>
+                        </li>
+                                            <li>
+                            <a href="login.action?language=fr_FR">Français</a>
+                        </li>
+                                            <li>
+                            <a href="login.action?language=zh_CN">中文</a>
+                        </li>
+                                            <li>
+                            <a href="login.action?language=ja_JP">日本語</a>
+                        </li>
+                                    </ul>
+            
+
+    <ul id="poweredby">
+        <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.1.4</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
+        <li class="print-only">Printed by Atlassian Confluence 5.1.4, Team Collaboration Software.</li>
+        <li class="noprint"><a href="http://jira.atlassian.com/secure/BrowseProject.jspa?id=10470" class="hover-footer-link">报告缺陷</a></li>
+        <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian 新闻</a></li>
+    </ul>
+
+    
+
+            
+    
+    </section>
+
+</div>
+
+        </div><!-- \#full-height-container -->
+</div><!-- \#page -->
+</body>
+</html>
